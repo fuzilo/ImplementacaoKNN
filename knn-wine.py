@@ -7,7 +7,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 
 #  Lê um arquivo .csv e o transforma em um Dataframe
-dados = pd.read_csv('qsar.csv', sep=';')
+dados = pd.read_csv('winequality-red.csv', sep=';')
 
 #Exclui os registros que possuem atributos faltantes
 dados.dropna(inplace=True)

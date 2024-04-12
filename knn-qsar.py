@@ -20,7 +20,7 @@ y = np.array(dados.iloc[:,-1])  #classes
 X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.3, train_size=0.7)
 
 #Escolha do modelo a ser utilizado
-neighbor = 7
+neighbor = 3
 knn=KNeighborsClassifier(neighbor)
 knn.fit(X_train,Y_train)
 previsoes = knn.predict(X_test)
